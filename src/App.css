@@ -1,3 +1,7 @@
+body, html{
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +39,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+hr.hr-text {
+  position: relative;
+    border: none;
+    height: 1px;
+    background: #999;
+}
+
+hr.hr-text::before {
+    content: attr(data-content);
+    display: inline-block;
+    background: #ebf5f2;
+    font-weight: bold;
+    font-size: 0.85rem;
+    color: #999;
+    border-radius: 30rem;
+    padding: 0.2rem 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
