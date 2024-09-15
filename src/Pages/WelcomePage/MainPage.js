@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import img1 from "./img/img1.jpg"
-import img2 from "./img/img2.jpg"
-import img3 from "./img/img3.jpg"
-import img4 from "./img/img4.jpg"
-import mainIMG from "./img/main.jpg"
+import { NavLink } from "react-router-dom";
+import img1 from "../../img/img1.jpg"
+import img2 from "../../img/img2.jpg"
+import img3 from "../../img/img3.jpg"
+import img4 from "../../img/img4.jpg"
+import mainIMG from "../../img/main.jpg"
 import "./main.css";
 
 
@@ -17,9 +18,7 @@ export class MainPage extends Component {
 					<div className="hero-content-area">
 						<h1> Win corona Virus </h1>
 						<h3>We will win the virus some lorem ipsum  </h3>
-						<a href="#" className="btn">
-							contact Us
-						</a>
+						<a href="/formpage" className="btn">Fill in the form</a>
 					</div>
 				</section>
 
